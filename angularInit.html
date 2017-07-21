@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>angular指令</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/angularInit.css">
+    <script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js"></script>
+    <script src="js/angularInit.js"></script> 
+</head>
+<body>
+    <!--<fieldset class="form1" ng-app="" ng-init="name = '小明'">
+        <legend>AngularJS指令</legend>
+        <p class="p1">请在输入框中输入你的名字</p>
+        <label for="">姓名：</label>
+        <input type="text" ng-model="name">
+        <p class="p2">你输入的为：<span>{{name}}</span></p>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="" ng-init="num=1;price=2">
+        <legend>数据绑定</legend>
+        <p class="p1">价格计算器</p>
+        <label for="">数量：</label>
+        <input type="text" ng-model="num">
+        <label for="">价格：</label>
+        <input type="text" ng-model="price">
+        <p class="p2">你输入的为：<span>{{num * price}}</span></p>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="" ng-init="names=[{x:'aa',y:1},{x:'cc',y:2},{x:'ee',y:3}]">
+        <legend>重复HTML元素</legend>
+        <p class="p1">循环对象</p>
+        <ul>
+            <li ng-repeat="a in names">{{a.x + '' + a.y}}</li>
+        </ul>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp" >
+        <legend>创建自定义指令</legend>
+        <self-directive></self-directive>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp2" ng-controller="myCtrl">
+        <legend>ng-model指令</legend>
+        <label for="">名字：</label>
+        <input type="text" ng-model="name">
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp3" ng-controller="myCtrl1">
+        <legend>双向绑定</legend>
+        <label for="">名字：</label>
+        <input type="text" ng-model="name">
+        <p class="p2">你输入的为：<span>{{name}}</span></p>
+    </fieldset>-->
+    <!--<form class="form1" ng-app="" name="form">
+        <legend>验证用户输入</legend>
+        <label for="">邮箱：</label>
+        <input type="email" name="email" ng-model="text">
+        <p class="p2" ng-show="form.email.$error.email">邮箱地址不合法</p>
+    </form>-->
+    <!--<form class="form1" ng-app="" name="form2" ng-init="text='tai@163.com'">
+        <legend>应用状态</legend>
+        <label>邮箱：</label>
+        <input type="email" name="email2" ng-model="text">
+        <p>编辑邮箱地址，查看状态变化。</p>
+        <h1>状态：</h1>
+        <p>valid:{{form2.email2.$valid}} (如果输入的值是合法的则为TRUE)</p>
+        <p>dirty: {{form2.email2.$dirty}}(如果输入的值改变则为TRUE)</p>
+        <p>touched: {{form2.email2.$touched}}(如果通过触屏点击则为TRUE)</p>
+    </form>-->
+    <!--<form class="form1" ng-app="">
+        <legend>css类</legend>
+        <label>邮箱：</label>
+        <input type="text" class="inputstyle1" ng-model="invaildbg" required>
+    </form>-->
+    <!--<fieldset class="form1" ng-app="myApp4" ng-controller="myCtrl2">
+        <legend>Scope作用域</legend>
+        <h1>{{name}}</h1>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp5" ng-controller="myCtrl3">
+        <legend>Scope概述mvc</legend>
+        <input type="text" ng-model="name">
+        <h1>{{greeting}}</h1>
+        <button ng-click="sayHello()">点我</button>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp6" ng-controller="myCtrl4">
+        <legend>Scope作用范围</legend>
+        <ul>
+            <li ng-repeat="x in name">{{x}}</li>
+        </ul>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp7">
+        <legdend>根作用域</legdend>
+        <div ng-controller="myCtrl5">
+            <h1>姓氏为{{firstName}}的家庭</h1>
+            <ul>
+                <li ng-repeat="x in names">{{firstName}}{{x}}</li>
+            </ul>
+        </div>
+        <div ng-controller="myCtrl6">
+            <p>让$rootScope的值赋值给scope:{{firstName}}</p>
+        </div>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp8" ng-controller="myCtrl7">
+        <legend>AngularJS控制器</legend>
+        <label>名：</label>
+        <input type="text" ng-model="name">
+        <label for="">姓：</label>
+        <input type="text" ng-model="firstName">
+        <p>姓名：{{firstName + name}}</p>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp9" ng-controller="myCtrl8">
+        <legend>控制器方法 + 表达式中添加过滤器</legend>
+        <label>名：</label>
+        <input type="text" ng-model="name">
+        <label for="">姓：</label>
+        <input type="text" ng-model="firstName">
+        <p>姓名：{{fullName() | uppercase}}</p>
+    </fieldset>-->
+    
+</body>
+</html>
