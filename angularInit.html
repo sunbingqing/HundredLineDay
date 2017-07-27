@@ -5,7 +5,7 @@
     <title>angular指令</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/angularInit.css">
-    <script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.10/angular.js"></script>
     <script src="js/angularInit.js"></script> 
 </head>
 <body>
@@ -112,6 +112,152 @@
         <input type="text" ng-model="firstName">
         <p>姓名：{{fullName() | uppercase}}</p>
     </fieldset>-->
-    
+    <!--<fieldset class="form1" ng-app="myApp10" ng-controller="myCtrl9">
+        <legend>$location服务</legend>
+        <p>当前页面的地址：{{ myUrl }}</p>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp11" ng-controller="myCtrl10">
+        <legend>$http服务</legend>
+        <p>欢迎信息：{{ myWelcome }}</p>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp12" ng-controller="myCtrl11">
+        <legend>过滤器中使用自定义服务</legend>
+        <p>在获取数组[255,232,222]数组时使用过滤器</p>
+        <ul>
+            <li ng-repeat="x in counts">{{x | myFormat}}</li>
+        </ul>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp13" ng-controller="myCtrl12">
+        <legend>$timeout服务</legend>
+        <p>两秒后更新信息：</p>
+        <h1>{{myHeader}}</h1>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp14" ng-controller="myCtrl13">
+        <legend>$interval服务</legend>
+        <p>现在的时间是：</p>
+        <h1>{{ theTime }}</h1>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp15" ng-controller="myCtrl14">
+        <legend>创建自定义服务</legend>
+        <p>222的十六进制是：</p>
+        <h1>{{ hex }}</h1>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp16">
+        <legend>在过滤器中使用服务</legend>
+        <p>255的十六进制是：</p>
+        <h1>{{ 255 | myFormat}}</h1>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp17" ng-controller="myCtrl15">
+        <legend>$http通用方法实例</legend>
+        <ul>
+            <li ng-repeat="x in names">{{x.Name + '' + x.Country}}</li>
+        </ul>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp18" ng-controller="myCtrl16">
+        <legend>使用ng-options创建选择框</legend>
+        <select name="" id="" ng-init="selectName = sites[0]" ng-model="selectName" ng-options="x.site for x in sites"></select>
+        <p>网址：{{selectName.url}}</p>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp19" ng-controller="myCtrl17">
+        <legend>使用ng-repeat创建选择框</legend>
+        <select name="" id="" ng-model="selectUrl">
+            <option value="{{x.url}}" ng-repeat="x in sites">{{x.site}}</option>
+        </select>
+        <p>网址：{{selectUrl}}</p>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp20" ng-controller="myCtrl18">
+        <legend>数据源为对象--ng-option</legend>
+        <select name="" id="" ng-model="selectCar" ng-options="x for (x,y) in cars"></select>
+        <h1>你选择的是: {{selectCar.brand}}</h1>
+        <h2>模型: {{selectCar.model}}</h2>
+        <h3>颜色: {{selectCar.color}}</h3>      
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp21" ng-controller="myCtrl19">
+        <legend>在表格中显示数据</legend>
+        <table>
+            <tr ng-repeat="x in names | orderBy:'Country'">
+                <td style = "{{$even?'background:#f1f1f1':''}}">{{x.Name}}</td>
+                <td style = "{{$even?'background:#f1f1f1':''}}">{{x.Country}}</td>
+            </tr>
+        </table>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="">
+        <legend>ng-disabled指令</legend>
+        <button ng-disabled="mySwitch">按钮</button>
+        <input type="checkbox" ng-model="mySwitch">开关
+        <p>{{mySwitch}}</p>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="">
+        <legend>ng-show指令1</legend>
+        <p ng-show="true">我是显示的</p>
+        <p ng-show="false">我是隐藏的</p>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="" ng-init="initNum = 13">
+        <legend>ng-show指令2</legend>
+        <p ng-show="initNum > 12">我是显示的</p>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp22" ng-controller="myCtrl20">
+        <legend>ng-click指令</legend>
+        <button ng-click="count = count + 1">点我加一</button>
+        <p>{{count}}</p>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp23" ng-controller="myCtrl21">
+        <legend>隐藏HTML元素</legend>
+        <button ng-click="toggle()">点击隐藏</button>
+        <div ng-hide="myVar">
+            姓：<input type="text" ng-model="firstName">
+            名：<input type="text" ng-model="lastName">
+            <p>你输入的值是：{{name()}}</p>
+        </div>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="">
+        <legend>单选框ng-model+ng-switch</legend>
+        <form action="">
+            <input type="radio" ng-model="myVar" value="dogs">dog
+            <input type="radio" ng-model="myVar" value="cats">cat
+            <input type="radio" ng-model="myVar" value="pigs">pig
+        </form>
+        <div ng-switch="myVar">
+            <div ng-switch-when="dogs">
+                <h1>dogs</h1>
+                <p>this is a dog</p>
+            </div>
+            <div ng-switch-when="cats">
+                <h1>cats</h1>
+                <p>this is a cats</p>
+            </div>
+            <div ng-switch-when="pigs">
+                <h1>pigs</h1>
+                <p>this is a pigs</p>
+            </div>
+        </div>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp24" ng-controller="myCtrl22">
+        <legend>AngularJS表单实例</legend>
+        <form action="" novalidate>
+            姓：<input type="text" ng-model="user.firstName">
+            名：<input type="text" ng-model="user.lastName">
+            <button ng-click="reset()">重置</button>
+        </form>
+        <p>form = {{user}}</p>
+        <p>master = {{master}}</p>
+    </fieldset>-->
+    <fieldset class="form1" ng-app="myApp25" ng-controller="myCtrl23">
+        <legend>AngularJS输入验证</legend>
+        <form action="" name="myForm" novalidate>
+            用户名：<input type="text" name="user" ng-model="user" required>
+            <span style="color:red;" ng-show="myForm.user.$dirty && myForm.user.$invalid">
+                <span ng-show="myForm.user.$error.required">用户名是必填的</span>
+            </span>
+            <br>
+            邮箱：<input type="text" name="email" ng-model="email" required>
+            <span style="color:red;" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+                <span ng-show="myForm.email.$error.required">邮箱是必须的</span>
+                <span ng-show="myForm.email.$error.email">邮箱格式不对</span>
+            </span>
+            <br>
+            <input type="submit" ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid">
+        </form>
+    </fieldset>
 </body>
 </html>
