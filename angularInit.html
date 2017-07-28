@@ -5,6 +5,7 @@
     <title>angular指令</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/angularInit.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://code.angularjs.org/1.5.10/angular.js"></script>
     <script src="js/angularInit.js"></script> 
 </head>
@@ -242,7 +243,7 @@
         <p>form = {{user}}</p>
         <p>master = {{master}}</p>
     </fieldset>-->
-    <fieldset class="form1" ng-app="myApp25" ng-controller="myCtrl23">
+    <!--<fieldset class="form1" ng-app="myApp25" ng-controller="myCtrl23">
         <legend>AngularJS输入验证</legend>
         <form action="" name="myForm" novalidate>
             用户名：<input type="text" name="user" ng-model="user" required>
@@ -258,6 +259,46 @@
             <br>
             <input type="submit" ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid">
         </form>
+    </fieldset>-->
+    <!--<fieldset class="form1" ng-app="myApp26" ng-controller="myCtrl24">
+        <legend>angular.lowercase()</legend>
+        <p>{{x}}</p>
+        <p>{{y}}</p>
+    </fieldset>-->
+    <fieldset class="form1" ng-app="myApp27" ng-controller="myCtrl25">
+        <legend>AngularJS bootstrap</legend>
+        <div class="container">
+            <h3>USER</h3>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>编辑</th>
+                    <th>名</th>
+                    <th>姓</th>
+                </tr>
+                </thead>
+                
+                <tr ng-repeat="name in user">
+                    <td>
+                        <button class="btn">
+                            <span class="glyphicon glyphicon-pencil"></span>
+                            <span>编辑</span>
+                        </button>
+                    </td>
+                    <td>{{name.fName}}</td>
+                    <td>{{name.lName}}</td>
+                </tr>
+            </table>
+            <hr>
+            <button class="btn btn-success">
+                <span class="glyphicon glyphicon-user"></span>
+                <span>创建新用户</span>
+            </button>
+            <hr>
+            <h3 ng-show="edit">创建新用户</h3>
+            <h3 ng-hide="edit">编辑新用户</h3>
+            
+        </div>
     </fieldset>
 </body>
 </html>

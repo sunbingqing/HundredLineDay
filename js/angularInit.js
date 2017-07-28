@@ -189,7 +189,7 @@
 //     }
 // })
 
-//在表格中使用数据
+//-----在表格中使用数据
 // var app21 = angular.module('myApp21',[]);
 // app21.controller('myCtrl19',function($scope,$http){
 //     $http.get("http://www.easy-mock.com/mock/59780a36a1d30433d83db81b/HundredLineDay/Customers")
@@ -198,13 +198,13 @@
 //     })
 // })
 
-//ng-click指令
+//-----ng-click指令
 // var app22 = angular.module('myApp22',[]);
 // app22.controller('myCtrl20',function($scope){
 //     $scope.count = 1;
 // })
 
-//隐藏HTML元素
+//-----隐藏HTML元素
 // var app23 = angular.module('myApp23',[]);
 // app23.controller('myCtrl21',function($scope){
 //     $scope.firstName = '陈';
@@ -218,7 +218,7 @@
 //     }
 // })
 
-//AngularJS表单实例
+//-----AngularJS表单实例
 // var app24 = angular.module('myApp24',[]);
 // app24.controller('myCtrl22',function($scope){
 //     $scope.master = {firstName:'hah',lastName:'kiki'};
@@ -228,9 +228,31 @@
 //     $scope.reset();
 // })
 
-//AngularJS输入验证
-var app25 = angular.module('myApp25',[]);
-app25.controller('myCtrl23',function($scope){
-    $scope.user = 'hh';
-    $scope.email = '1223@ss.com';
+//-----AngularJS输入验证
+// var app25 = angular.module('myApp25',[]);
+// app25.controller('myCtrl23',function($scope){
+//     $scope.user = 'hh';
+//     $scope.email = '1223@ss.com';
+// })
+
+//angular.lowercase()
+// var app26 = angular.module('myApp26',[]);
+// app26.controller('myCtrl24',function($scope){
+//     $scope.x = 'JSON';
+//     $scope.y = angular.lowercase($scope.x);
+// })
+
+//AngularJS bootstrap
+var app27 = angular.module('myApp27',[]);
+app27.controller('myCtrl25',function($scope){
+    // $scope.fName = '';
+    // $scope.lName = '';
+    $scope.user=[
+        {id:1,fName:'陈',lName:'^(*￣(oo)￣)^'},
+        {id:2,fName:'陈',lName:'大'},
+        {id:3,fName:'陈',lName:'二'},
+        {id:4,fName:'陈',lName:'三'},
+        {id:5,fName:'陈',lName:'十'},
+        {id:6,fName:'陈',lName:'哈哈'}
+    ]
 })
