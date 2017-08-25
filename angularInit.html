@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>angular指令</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <!--<link rel="stylesheet" href="css/reset.css">-->
     <link rel="stylesheet" href="css/angularInit.css">
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://code.angularjs.org/1.5.10/angular.js"></script>
-    <script src="js/angularInit.js"></script> 
+    <script src="js/angularInit.js"></script>
 </head>
+
 <body>
     <!--<fieldset class="form1" ng-app="" ng-init="name = '小明'">
         <legend>AngularJS指令</legend>
@@ -271,13 +273,13 @@
             <h3>USER</h3>
             <table class="table table-striped">
                 <thead>
-                <tr>
-                    <th>编辑</th>
-                    <th>名</th>
-                    <th>姓</th>
-                </tr>
+                    <tr>
+                        <th>编辑</th>
+                        <th>名</th>
+                        <th>姓</th>
+                    </tr>
                 </thead>
-                
+
                 <tr ng-repeat="name in user">
                     <td>
                         <button class="btn">
@@ -297,8 +299,9 @@
             <hr>
             <h3 ng-show="edit">创建新用户</h3>
             <h3 ng-hide="edit">编辑新用户</h3>
-            
+
         </div>
     </fieldset>
 </body>
+
 </html>
